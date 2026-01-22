@@ -14,6 +14,7 @@
         <!-- CSS FILES -->        
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/custom-variables.css" rel="stylesheet">
         <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
 
         <!-- JSON-LD Schema -->
@@ -144,134 +145,167 @@
                     <div class="row">
 
                         <div class="col-lg-6 col-12 mx-auto">
-                            <form class="custom-form donate-form" action="#" method="get" role="form">
-                                <h3 class="mb-4">Make a donation</h3>
+                            <form class="custom-form donate-form" action="#" method="post" role="form">
+                                <h3 class="mb-4">Agendar tu Consulta Médica</h3>
 
                                 <div class="row">
                                     <div class="col-lg-12 col-12">
-                                        <h5 class="mb-3">Donation Frequency</h5>
+                                        <h5 class="mb-3">Información Personal</h5>
                                     </div>
 
-                                    <div class="col-lg-6 col-6 form-check-group form-check-group-donation-frequency">
+                                    <div class="col-lg-6 col-12">
+                                        <input type="text" name="patient-name" id="patient-name" class="form-control" placeholder="Nombre completo" required>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12">    
+                                        <input type="email" name="patient-email" id="patient-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="tu@email.com" required>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12">
+                                        <input type="tel" name="patient-phone" id="patient-phone" class="form-control" placeholder="Teléfono o WhatsApp" required>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12">
+                                        <select class="form-control" id="country" name="country" required>
+                                            <option value="">País de Residencia</option>
+                                            <option value="co">Colombia</option>
+                                            <option value="us">Estados Unidos</option>
+                                            <option value="es">España</option>
+                                            <option value="mx">México</option>
+                                            <option value="ar">Argentina</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12 col-12">
+                                        <h5 class="mt-4 mb-3">Selecciona tu Especialidad</h5>
+                                    </div>
+
+                                    <div class="col-lg-6 col-6 form-check-group">
                                         <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="DonationFrequency" id="DonationFrequencyOne" checked>
-                                            
-                                            <label class="form-check-label" for="DonationFrequencyOne">
-                                                One Time
+                                            <input class="form-check-input" type="radio" name="specialization" id="spec1" value="cirugía-estética">
+                                            <label class="form-check-label" for="spec1">
+                                                Cirugía Estética
                                             </label>
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-6 col-6 form-check-group form-check-group-donation-frequency">
+                                    <div class="col-lg-6 col-6 form-check-group">
                                         <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="DonationFrequency" id="DonationFrequencyMonthly">
-                                            
-                                            <label class="form-check-label" for="DonationFrequencyMonthly">
-                                                Monthly
+                                            <input class="form-check-input" type="radio" name="specialization" id="spec2" value="ortopedia">
+                                            <label class="form-check-label" for="spec2">
+                                                Ortopedia
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-6 form-check-group">
+                                        <div class="form-check form-check-radio">
+                                            <input class="form-check-input" type="radio" name="specialization" id="spec3" value="ginecología">
+                                            <label class="form-check-label" for="spec3">
+                                                Ginecología
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-6 form-check-group">
+                                        <div class="form-check form-check-radio">
+                                            <input class="form-check-input" type="radio" name="specialization" id="spec4" value="dermatología">
+                                            <label class="form-check-label" for="spec4">
+                                                Dermatología
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-6 form-check-group">
+                                        <div class="form-check form-check-radio">
+                                            <input class="form-check-input" type="radio" name="specialization" id="spec5" value="medicina-regenerativa">
+                                            <label class="form-check-label" for="spec5">
+                                                Medicina Regenerativa
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-6 form-check-group">
+                                        <div class="form-check form-check-radio">
+                                            <input class="form-check-input" type="radio" name="specialization" id="spec6" value="medicina-interna">
+                                            <label class="form-check-label" for="spec6">
+                                                Medicina Interna
                                             </label>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12 col-12">
-                                        <h5 class="mt-2 mb-3">Select an amount</h5>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6 col-6 form-check-group">
-                                        <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                $10
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6 col-6 form-check-group">
-                                        <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                $15
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6 col-6 form-check-group">
-                                        <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                                            <label class="form-check-label" for="flexRadioDefault3">
-                                                $20
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6 col-6 form-check-group">
-                                        <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                                            <label class="form-check-label" for="flexRadioDefault4">
-                                                $30
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6 col-6 form-check-group">
-                                        <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
-                                            <label class="form-check-label" for="flexRadioDefault5">
-                                                $45
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-6 col-6 form-check-group">
-                                        <div class="form-check form-check-radio">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
-                                            <label class="form-check-label" for="flexRadioDefault6">
-                                                $50
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-12 form-check-group">
-                                        <div class="input-group">
-                                            <span class="input-group-text" id="basic-addon1">$</span>
-                                            
-                                            <input type="text" class="form-control" placeholder="Custom amount" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
+                                        <h5 class="mt-4 mb-2">Detalles de tu Caso</h5>
                                     </div>
 
                                     <div class="col-lg-12 col-12">
-                                        <h5 class="mt-1">Personal Info</h5>
-                                    </div>
-
-                                    <div class="col-lg-6 col-12 mt-2">
-                                        <input type="text" name="donation-name" id="donation-name" class="form-control" placeholder="Jack Doe" required>
-                                    </div>
-
-                                    <div class="col-lg-6 col-12 mt-2">
-                                        <input type="email" name="donation-email" id="donation-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jackdoe@gmail.com" required>
+                                        <textarea name="medical-details" rows="4" class="form-control" id="medical-details" placeholder="Cuéntanos sobre tu condición médica, tratamientos anteriores o expectativas (Opcional)" maxlength="500"></textarea>
+                                        <small class="form-text text-muted">Máximo 500 caracteres</small>
                                     </div>
 
                                     <div class="col-lg-12 col-12">
-                                        <h5 class="mt-4 pt-1">Choose Payment</h5>
+                                        <h5 class="mt-4 mb-3">Destinos Turísticos de Interés</h5>
+                                    </div>
+
+                                    <div class="col-lg-6 col-6 form-check">
+                                        <input class="form-check-input" type="checkbox" name="destination-medellin" id="dest1">
+                                        <label class="form-check-label" for="dest1">
+                                            Medellín
+                                        </label>
+                                    </div>
+
+                                    <div class="col-lg-6 col-6 form-check">
+                                        <input class="form-check-input" type="checkbox" name="destination-cartagena" id="dest2">
+                                        <label class="form-check-label" for="dest2">
+                                            Cartagena
+                                        </label>
+                                    </div>
+
+                                    <div class="col-lg-6 col-6 form-check">
+                                        <input class="form-check-input" type="checkbox" name="destination-bogota" id="dest3">
+                                        <label class="form-check-label" for="dest3">
+                                            Bogotá
+                                        </label>
+                                    </div>
+
+                                    <div class="col-lg-6 col-6 form-check">
+                                        <input class="form-check-input" type="checkbox" name="destination-barranquilla" id="dest4">
+                                        <label class="form-check-label" for="dest4">
+                                            Barranquilla
+                                        </label>
+                                    </div>
+
+                                    <div class="col-lg-12 col-12">
+                                        <h5 class="mt-4 pt-1">Preferencia de Contacto</h5>
                                     </div>
 
                                     <div class="col-lg-12 col-12 mt-2">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="DonationPayment" id="flexRadioDefault9">
-                                            <label class="form-check-label" for="flexRadioDefault9">
-                                                <i class="bi-credit-card custom-icon ms-1"></i>
-                                                Debit or Credit card
+                                            <input class="form-check-input" type="radio" name="contact-preference" id="contact1" value="whatsapp">
+                                            <label class="form-check-label" for="contact1">
+                                                <i class="bi-whatsapp custom-icon ms-1"></i>
+                                                WhatsApp
                                             </label>
                                         </div>
 
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="DonationPayment" id="flexRadioDefault10">
-                                            <label class="form-check-label" for="flexRadioDefault10">
-                                                <i class="bi-paypal custom-icon ms-1"></i>
-                                                Paypal
+                                            <input class="form-check-input" type="radio" name="contact-preference" id="contact2" value="email">
+                                            <label class="form-check-label" for="contact2">
+                                                <i class="bi-envelope custom-icon ms-1"></i>
+                                                Email
                                             </label>
                                         </div>
 
-                                        <button type="submit" class="form-control mt-4">Submit Donation</button>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="contact-preference" id="contact3" value="phone">
+                                            <label class="form-check-label" for="contact3">
+                                                <i class="bi-telephone custom-icon ms-1"></i>
+                                                Llamada Telefónica
+                                            </label>
+                                        </div>
+
+                                        <button type="submit" class="form-control mt-4">Enviar Solicitud de Consulta</button>
                                     </div>
                                 </div>
                             </form>
@@ -286,50 +320,50 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-12 mb-4">
-                        <img src="images/logo.png" class="logo img-fluid" alt="">
+                        <img src="images/logo.png" class="logo img-fluid" alt="Medicolombia Star">
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-12 mb-4">
-                        <h5 class="site-footer-title mb-3">Quick Links</h5>
+                        <h5 class="site-footer-title mb-3">Enlaces Útiles</h5>
 
                         <ul class="footer-menu">
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Our Story</a></li>
+                            <li class="footer-menu-item"><a href="index.html#section_2" class="footer-menu-link">Quiénes Somos</a></li>
 
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Newsroom</a></li>
+                            <li class="footer-menu-item"><a href="news.html" class="footer-menu-link">Blog Médico</a></li>
 
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Causes</a></li>
+                            <li class="footer-menu-item"><a href="index.html#section_3" class="footer-menu-link">Servicios</a></li>
 
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Become a volunteer</a></li>
+                            <li class="footer-menu-item"><a href="donate.html" class="footer-menu-link">Agendar Consulta</a></li>
 
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Partner with us</a></li>
+                            <li class="footer-menu-item"><a href="index.html#section_6" class="footer-menu-link">Contáctanos</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-12 mx-auto">
-                        <h5 class="site-footer-title mb-3">Contact Infomation</h5>
+                        <h5 class="site-footer-title mb-3">Información de Contacto</h5>
 
                         <p class="text-white d-flex mb-2">
                             <i class="bi-telephone me-2"></i>
 
-                            <a href="tel: 120-240-9600" class="site-footer-link">
-                                120-240-9600
+                            <a href="tel:+573142557376" class="site-footer-link">
+                                +57 314 255 7376
                             </a>
                         </p>
 
                         <p class="text-white d-flex">
                             <i class="bi-envelope me-2"></i>
 
-                            <a href="mailto:donate@charity.org" class="site-footer-link">
-                                donate@charity.org
+                            <a href="mailto:contacto@medicalcolombiastar.com" class="site-footer-link">
+                                contacto@medicalcolombiastar.com
                             </a>
                         </p>
 
                         <p class="text-white d-flex mt-3">
                             <i class="bi-geo-alt me-2"></i>
-                            Akershusstranda 20, 0150 Oslo, Norway
+                            Calle 4 # 15 - 31, Colombia
                         </p>
 
-                        <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                        <a href="#" class="custom-btn btn mt-3">Ver Ubicación</a>
                     </div>
                 </div>
             </div>
@@ -339,16 +373,11 @@
                     <div class="row">
 
                         <div class="col-lg-6 col-md-7 col-12">
-                            <p class="copyright-text mb-0">Copyright © 2036 <a href="#">Kind Heart</a> Charity Org.
-                        	Design: <a href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+                            <p class="copyright-text mb-0">Copyright © 2026 <a href="#">Medicolombia Star</a> - Turismo Médico en Colombia. Todos los derechos reservados.</p>
                         </div>
                         
                         <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
                             <ul class="social-icon">
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-twitter"></a>
-                                </li>
-
                                 <li class="social-icon-item">
                                     <a href="#" class="social-icon-link bi-facebook"></a>
                                 </li>
@@ -358,11 +387,15 @@
                                 </li>
 
                                 <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                </li>
+
+                                <li class="social-icon-item">
                                     <a href="#" class="social-icon-link bi-linkedin"></a>
                                 </li>
 
                                 <li class="social-icon-item">
-                                    <a href="https://youtube.com/templatemo" class="social-icon-link bi-youtube"></a>
+                                    <a href="#" class="social-icon-link bi-youtube"></a>
                                 </li>
                             </ul>
                         </div>
