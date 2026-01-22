@@ -5,6 +5,55 @@ Medicolombia Star es una plataforma integral de turismo médico en Colombia que 
 
 ---
 
+## 🎨 Color Palette
+
+Our professional medical tourism brand uses a carefully selected color palette accessible via CSS custom properties:
+
+| Color Name | Hex Code | CSS Variable | Usage |
+|---|---|---|---|
+| Dark Navy/Black | `#090809` | `--color-dark` | Text, Headers, Footer |
+| Bright Red | `#f40000` | `--color-danger` | CTAs, Buttons, Alerts |
+| Coral Red | `#f44e3f` | `--color-coral` | Secondary Accents, Hover States |
+| Gold | `#e9b44c` | `--color-gold` | Highlights, Badges, Accents |
+| White | `#ffffff` | `--color-white` | Backgrounds, Light Text |
+
+### CSS Variables Usage
+
+All colors are defined as CSS custom properties in `css/custom-variables.css`. You can use them in your stylesheets:
+
+```css
+/* Primary button */
+.btn {
+  background-color: var(--color-danger);      /* #f40000 */
+  color: var(--color-white);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: var(--color-dark);                  /* #090809 */
+}
+
+/* Accent elements */
+.badge {
+  background-color: var(--color-gold);       /* #e9b44c */
+}
+
+/* Hover states */
+a:hover {
+  color: var(--color-coral);                 /* #f44e3f */
+}
+```
+
+### Brand Color Application
+
+- **Primary CTA**: Bright Red (`#f40000`) - Used for buttons, forms, and main actions
+- **Hover/Secondary**: Coral Red (`#f44e3f`) - Provides visual feedback
+- **Accents**: Gold (`#e9b44c`) - Highlights important information
+- **Text & Structure**: Dark Navy (`#090809`) - Professional, readable text
+- **Backgrounds**: White (`#ffffff`) - Clean, medical aesthetic
+
+---
+
 ## 📍 Contacto
 
 - **Dirección:** Calle 4 # 15 - 31
