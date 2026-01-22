@@ -264,3 +264,152 @@ section.section-bg {
   color: var(--color-danger) !important;
   font-weight: 600;
 }
+
+/* News Page Specific Styles */
+.news-section h2 {
+  color: var(--text-primary);
+}
+
+.news-block {
+  transition: var(--transition-base);
+}
+
+.news-block:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.news-category-block a {
+  background-color: transparent;
+  color: var(--color-danger);
+  border: 1px solid var(--color-danger);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.news-category-block a:hover {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+}
+
+.news-block-date,
+.news-block-author,
+.news-block-comment {
+  color: var(--text-secondary);
+}
+
+.news-block-date i,
+.news-block-author i,
+.news-block-comment i {
+  color: var(--color-danger);
+}
+
+.news-block-title h4,
+.news-block-title h6 {
+  color: var(--text-primary);
+}
+
+.news-block-title-link {
+  color: var(--text-primary);
+}
+
+.news-block-title-link:hover {
+  color: var(--color-danger);
+}
+
+.news-block-body {
+  color: var(--text-secondary);
+}
+
+/* Search Form */
+.search-form .form-control {
+  border-color: var(--color-border);
+  color: var(--text-primary);
+}
+
+.search-form .form-control:focus {
+  border-color: var(--color-danger);
+  box-shadow: 0 0 0 0.2rem rgba(244, 0, 0, 0.1);
+}
+
+.search-form button {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  border: none;
+}
+
+.search-form button:hover {
+  background-color: var(--color-coral);
+}
+
+/* Sidebar Titles */
+.mt-5.mb-3 {
+  color: var(--text-primary);
+}
+
+/* Subscribe Form */
+.subscribe-form .form-control:focus {
+  border-color: var(--color-danger);
+  box-shadow: 0 0 0 0.2rem rgba(244, 0, 0, 0.1);
+}
+
+.subscribe-form .form-control {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border-color: var(--color-border);
+}
+
+.subscribe-form button {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  border: none;
+}
+
+.subscribe-form button:hover {
+  background-color: var(--color-coral);
+}
+
+/* Site Header */
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-header p {
+  color: var(--text-secondary);
+}
+
+.site-header a {
+  color: var(--color-danger);
+}
+
+/* Social Icons */
+.social-icon-link {
+  color: var(--color-danger) !important;
+  transition: var(--transition-base);
+}
+
+.social-icon-link:hover {
+  color: var(--color-coral) !important;
+}
+
+/* Footer Links */
+.footer-menu-link {
+  color: var(--text-light);
+  transition: var(--transition-base);
+}
+
+.footer-menu-link:hover {
+  color: var(--color-gold);
+}
+
+.site-footer-link {
+  color: var(--color-gold) !important;
+  transition: var(--transition-base);
+}
+
+.site-footer-link:hover {
+  color: var(--color-white);
+}
+
+.site-footer-title {
+  color: var(--color-white);
+}
